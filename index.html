@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>2D Breakout Game</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<div class="gameover">GAME OVER</div>
+<div class="wrapper"></div>
+<div class="title">
+    <h1>BREAK-OUT GAME</h1>
+    <p>Breakout is a classic arcade video game originally released by Atari in 1976. The game involves controlling a paddle at the bottom of the screen to bounce a ball and break through rows of bricks at the top of the screen. The objective is to clear all the bricks while avoiding missing the ball with the paddle.
+        <br>
+        <br>
+        Breakout was designed by Atari co-founder Nolan Bushnell and Steve Jobs, who worked on the game as a contractor before founding Apple Computer. The game was a commercial success and helped popularize the use of microprocessors in arcade games.</p>
+</div>
+<div class="back">BACK</div>
+<div class="container">
+    <h1>SCORE: <span id="score">0</span></h1>
+    <div class="buttons">
+        <button id="start"><h1>START</h1></button>
+        <button id ="pause"><H1>PAUSE</H1></button>
+        <button id="restart"><h1>RESTART</h1></button>
+        <button id="hard"><h1>HARD MODE</h1></button>
+
+    </div> 
+    <div class="grid">
+        <div class="control">A/D TO MOVE...</div>
+    </div>
+</div>
+
+    <audio  id="wall" controls   src="HIT_WALL.mp3" style="display: none;">
+    <audio  id="platform" controls   src="HIT_PLATFORM.mp3" style="display: none;">
+    <audio  id="enemy" controls   src="HIT_ENEMY.mp3" style="display: none;">
+    <audio  id="dead" controls src="DEAD.mp3" style="display: none;">
+
+<script src="./script/script.js"></script>
+</body>
+</html>
